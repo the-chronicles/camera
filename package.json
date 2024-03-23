@@ -9,8 +9,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.73.6"
+    "react": "^18.2.0",
+    "react-native": "^0.73.6",
+    "react-native-color-picker": "^0.6.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-selectable-text": "^1.0.2",
+    "react-native-tesseract-ocr": "^2.0.3",
+    "react-native-vision-camera": "^3.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
