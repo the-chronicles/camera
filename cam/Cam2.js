@@ -14,9 +14,8 @@ import {
 // import Camera from 'react-native-camera';
 import {Camera} from 'react-native-vision-camera';
 import TesseractOcr from 'react-native-tesseract-ocr';
-import SelectableText from 'react-native-color-picker'; // Assuming ColorPicker from 'react-native-color-picker'
+import SelectableText from 'react-native-color-picker'; 
 
-// Download Tesseract OCR engine and language packs (e.g., eng.traineddata for English) and place them in a suitable location within your project (e.g., assets folder)
 
 const Cam2 = () => {
   const cameraRef = useRef(null);
@@ -27,7 +26,6 @@ const Cam2 = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [highlightColor, setHighlightColor] = useState('yellow');
 
-  // Request camera permission (Android only)
   useEffect(() => {
     const requestCameraPermission = async () => {
       if (Platform.OS === 'android') {
@@ -81,7 +79,7 @@ const Cam2 = () => {
 
   const saveText = async () => {
     if (!selectedText) {
-      return; // No text selected to save
+      return;
     }
 
     const filename = `${Date.now()}.txt`;
@@ -98,7 +96,7 @@ const Cam2 = () => {
 
   const copyToClipboard = async () => {
     if (!selectedText) {
-      return; // No text selected to copy
+      return;
     }
 
     await Clipboard.setString(selectedText);
