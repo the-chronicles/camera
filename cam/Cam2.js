@@ -15,6 +15,7 @@ import {
 import {Camera} from 'react-native-vision-camera';
 import TesseractOcr from 'react-native-tesseract-ocr';
 import SelectableText from 'react-native-color-picker';
+import * as MLVision from '@react-native-firebase/ml-vision';
 
 const Cam2 = () => {
   const cameraRef = useRef(null);
